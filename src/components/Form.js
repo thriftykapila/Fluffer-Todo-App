@@ -10,11 +10,15 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
 
   const submitTodoHandler = (e) => {
     e.preventDefault();
-    setTodos([
-      ...todos,
-      { text: inputText, completed: false, id: Math.random * 1000 },
-    ]);
-    setInputText("");
+
+    if (inputText.length > 0) {
+      setTodos([
+        ...todos,
+        { text: inputText, completed: false, id: Math.random() * 1000 },
+      ]);
+      console.log(todos);
+      setInputText("");
+    }
   };
   return (
     <form>
