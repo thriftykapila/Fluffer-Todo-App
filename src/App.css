@@ -57,6 +57,8 @@ form button:hover {
   justify-content: space-between;
   align-items: center;
   transition: all 1s ease;
+  resize: vertical;
+  overflow: scroll;
 }
 .filter-todo {
   padding: 1rem;
