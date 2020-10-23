@@ -141,9 +141,6 @@ select {
 /* Width overflow fix added CSS */
 .todo .btn_wrap {
   align-self: flex-start;
-}
-
-.todo .btn_wrap {
   display: flex;
 }
 

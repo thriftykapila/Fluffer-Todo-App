@@ -7,13 +7,6 @@ const Todo = ({ todoText, todos, setTodos, todo }) => {
 
   useEffect(() => {
     if (textRef.current.scrollWidth > textRef.current.offsetWidth) {
-      console.log(
-        textRef.current.textContent +
-          " in useEffect " +
-          textRef.current.offsetWidth +
-          " pref " +
-          textRef.current.scrollWidth
-      );
       setbtnDisplay("block");
     }
   });
