@@ -137,3 +137,25 @@ select {
     transform: scale(1.5);
   }
   */
+
+/* Width overflow fix added CSS */
+.todo .btn_wrap {
+  align-self: flex-start;
+}
+
+.todo .btn_wrap {
+  display: flex;
+}
+
+.todo .todo-item {
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.todo .btn_hidden {
+  display: none;
+}
+
+.todo .btn_dropdown {
+  overflow-wrap: anywhere;
+}
